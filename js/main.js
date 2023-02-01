@@ -3,10 +3,12 @@
  *              ON LOAD           *
  *                                *
  *********************************/
-
-const gridEl = document.getElementById("grid");
-const gridDimensionEl = 100;
-generatedGrid(gridEl, gridDimensionEl);
+const gridButtonEl = document.getElementById("button-play");
+gridButtonEl.addEventListener("click", function () {
+  const gridEl = document.getElementById("grid");
+  const gridDimensionEl = 100;
+  generatedGrid(gridEl, gridDimensionEl);
+});
 
 /**********************************
  *                                *
