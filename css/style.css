@@ -5,17 +5,16 @@
 } */
 
 main {
+  /* height: 100vh; */
   background-color: bisque;
-  height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 #grid {
-  width: 700px;
-  height: 700px;
+  width: 800px;
+  height: 800px;
   margin: auto;
 
   display: flex;
@@ -28,11 +27,15 @@ main {
 }
 
 .square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: calc(100% / 10);
   height: calc(100% / 10);
   cursor: crosshair;
 }
 
 .square.active {
-  background-color: aquamarine;
+  background-color: red;
+  color: white;
 }
