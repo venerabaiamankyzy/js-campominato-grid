@@ -1,0 +1,38 @@
+/* :root {
+  --primary-bg:;
+  --activ-bg:;
+
+} */
+
+main {
+  background-color: bisque;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#grid {
+  width: 700px;
+  height: 700px;
+  margin: auto;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#grid,
+.square {
+  border: 2px solid black;
+}
+
+.square {
+  width: calc(100% / 10);
+  height: calc(100% / 10);
+  cursor: crosshair;
+}
+
+.square.active {
+  background-color: aquamarine;
+}
