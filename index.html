@@ -18,17 +18,24 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="navbar mx-3">
+    <header class="navbar px-3">
       <div class="container-fluid d-flex justify-content-between">
         <nav class="logo navbar-brand fw-bold">Campo Minato</nav>
         <div class="header-left d-flex gap-4 align-items-center">
           <label for="difficulty">Difficoltà</label>
-          <select name="" id="difficulty">
-            <option value="hard">Hard</option>
-            <option value="medium">Medium</option>
+          <select
+            class="form-select-sm p-2 rounded text-center"
+            id="difficulty"
+          >
             <option value="easy">Easy</option>
+            <option value="medium">Medium</option>
+            <option value="hard">Hard</option>
           </select>
-          <button type="button" id="button-play" class="btn btn-success">
+          <button
+            type="button"
+            id="button-play"
+            class="btn btn-outline-dark py-1"
+          >
             Play
           </button>
         </div>
@@ -37,7 +44,7 @@
 
     <main>
       <div class="container">
-        <div id="grid"></div>
+        <div id="grid" class="my-3"></div>
       </div>
     </main>
 
